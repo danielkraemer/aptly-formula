@@ -18,9 +18,23 @@ aptly:
       distribution: trusty
       components:
         - main
-      keyid: DE57BFBE
+      keyid: 
+        - DE57BFBE
       architectures:
         - amd64
+    ubuntu1604-lts:
+      url: http://de.archive.ubuntu.com/ubuntu/
+      distribution: xenial
+      components:
+        - main
+        - restricted
+      keyid:
+        - 3B4FE6ACC0B21F32
+        - 40976EAF437D05B5
+      architectures:
+        - amd64
+      with-sources: "true"
+      with-udebs: "true"
   secure: True
   s3Endpoints:
     test:
